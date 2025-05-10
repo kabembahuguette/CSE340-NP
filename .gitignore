@@ -17,3 +17,23 @@ node_modules
 #The readme file is not required, but can be helpful. In this case, 
 #it contains a brief overview of how to make use of these starter files and folders.
 README.md
+
+
+# index.ejs
+<%- include('partials/header') %>
+<main class="home-container">
+  <section class="hero">
+    <img src="/images/hero-car.jpg" alt="CSE Motors Hero Image" class="hero-img">
+    <div class="hero-text">
+      <h1>Welcome to CSE Motors</h1>
+      <p>Your trusted partner in quality vehicles.</p>
+    </div>
+  </section>
+
+
+# footer
+<% const d = new Date()
+  let year = d.getFullYear() %>
+<footer>
+  <p class="copyright">& copy ; <%= year %>, CSE 340 App</p>
+</footer>
